@@ -1,4 +1,4 @@
-# Waste Classification Model: Recyclable, Biodegradable, or Non-Recyclable
+# Waste Classification Model
 
 This project was made for the IEEE Internal Hackathon by team 5. It is a YOLO-based object classification model to idenitify whether an object shown is to be thrown into the **Recyclable**, **Biodegradable**, or **Non-Recyclable** bins
 
