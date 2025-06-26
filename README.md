@@ -12,5 +12,7 @@ The model has been trained on datasets from kaggle containing images of common w
 > Model Type: *[YOLO]*  
 > Framework: *[PyTorch]*
 
+The Guidelines.txt files gives a step-by-step procedure on how to make your own object identification model.
+
 ### Progress
 By the end of the hack, the model will be able to identify - plastics, cardboard, and clothes. (Slow due to the bottleneck of the images being manually labelled)
