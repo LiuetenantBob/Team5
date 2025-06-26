@@ -1,0 +1,41 @@
+Create a workspace directory
+Have all the images in a single folder on the computer
+
+Download Anaconda from https://www.anaconda.com/download/success
+In the Anaconda Command Prompt, create a virtual environment for our YOLO model
+>>conda create --name garb-env python
+>>conda activate garb-env
+
+Install Label Studio for labelling the dataset
+>>pip install label-studio
+
+Run label studio using the command
+>>label-studio start
+Create a new project and import your images in the "Data Import" tab
+In the Labelling setup tab, choose object detection with bounding boxes
+Remove the pre-existing labels and add your labels (cardboard, plastic, clothes,...) and save the project settings
+Label all the images
+
+After labelling the images, export the files along with their labels by choosing the "Export YOLO with images" option
+Move this file to the workspace directory and rename it to "data"
+
+Open the ipynb file on google collab and choose the T4 GPU runtime and connect
+Move the "data.zip" file to files on google collab
+Run all the cells in the file
+
+Now to run it on your device
+Download and extract the garbage_man.zip file
+
+>>cd path/to/garbage_man
+>>pip install ultralytics
+
+To use CUDA for Pytorch, you can use the installation command from https://pytorch.org/get-started/locally/
+
+After CUDA is installed download a python file to read data from your webcam
+>>curl -o yolo_detect.py https://www.ejtech.io/code/yolo_detect.py
+
+To use your webcam for object recognition
+>>python yolo_detect.py --model garbage_man.pt --source usb0 --resolution 1280x720 (or whatever resolution your webcam is)
+
+Legend:
+>> On Anaconda Command Prompt
