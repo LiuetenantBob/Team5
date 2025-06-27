@@ -16,3 +16,5 @@ The Guidelines.txt files gives a step-by-step procedure on how to make your own 
 
 ### Progress
 By the end of the hack, the model will be able to identify - plastics, cardboard, and clothes. (Slow due to the bottleneck of the images being manually labelled)
+
+![Screenshot (23)](https://github.com/user-attachments/assets/04682549-fbab-4e36-8607-c013ea8e15d8)
